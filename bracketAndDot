@@ -1,0 +1,16 @@
+//Dot notation 
+const zoo = {
+    cat: `meow`,
+    dog:`woof`, 
+}; 
+
+
+//Bracket notation
+const garage ={
+    car: `audi`,
+    bike:`Harley Davidson`, 
+    bicycle:`fixie`
+}
+
+
+console.log(zoo[cat]);

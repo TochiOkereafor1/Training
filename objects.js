@@ -167,7 +167,7 @@ console.log(combined)
 
 // An object is a dat structure
 
-
+/*
 const menu = {
     Sweet: "Thai sweet chilli noodles",
     Savoury: "Soculent meat",
@@ -193,4 +193,79 @@ for (const [key, value] of Object.entries(object1)) {
 // expected output:
 // "a: somestring"
 // "b: 42"
+*/
+
+
+const garageTwo= [
+{
+carMake: "Merceedes",
+carMake: "R8", 
+fuel: "Electric"
+},
+
+{
+carName: "BMW",
+carMake: "M3", 
+fuel: "Petrol"
+},
+
+{
+carName: "Audi",
+carMake: "R8", 
+fuel: "Petrol"
+},
+]
+
+const carTwo = {
+carName: "Test",
+carMake: "R8", 
+fuel: "Petrol"
+}
+
+var ress = garageTwo.unshift(carTwo)
+console.log(garageTwo)
+
+
+let parking = garageTwo.find(car=> garageTwo.carMake=="Test")
+console.log(parking)
+/*
+17/12/22
+Trying to manipulate the objects within the object array but i'm not sure how to do that 
+>>Found out how to create an object array
+>>Found out that to add to an object array you first need to have something to add to the array 
+>>Found out how to manipulate an array of objects using the shift() unshift() 
+>>Looping through an array of objects 
+
+
+
+*/
+//var ob = object.keys(garageTwo)
+//console.log(ob);
+
+//var res = garageTwo.unshift("BMW")
+//garageTwo.unshift(garageTwo.Audi)
+
+const door = [
+{
+A:"johnny"
+},
+
+{
+  B: "jimmy"
+}
+
+]
+
+
+let exp = door.shift()
+console.log(door)
+
+
+/*
+To try next 19/12/22
+Splicing, Pushing, unShift, 
+Array.find 
+Array.find 
+should work on practicing manipulating arrays with fake data and solid scenarios 
+
 */

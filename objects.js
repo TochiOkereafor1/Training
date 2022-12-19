@@ -361,3 +361,12 @@ let spec = cars.map(car => {
 console.log(stuffTwo); 
 console.log(spec)
 
+
+const meat = ["venison", "Lamb", "Pork", "Chicken", "Fish", "Wild-Game"];
+
+const veg = ["Cabbage", "Brocolli", "Sprouts", "Colliflower", "Lettuce"];
+
+
+let fusion = meat.concat(veg); 
+
+console.log(fusion)

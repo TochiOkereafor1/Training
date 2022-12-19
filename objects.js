@@ -195,7 +195,7 @@ for (const [key, value] of Object.entries(object1)) {
 // "b: 42"
 */
 
-
+/*
 const garageTwo= [
 {
 carMake: "Merceedes",
@@ -269,3 +269,95 @@ Array.find
 should work on practicing manipulating arrays with fake data and solid scenarios 
 
 */
+
+const cars = [
+{
+make: "ferrari", 
+colour: "red",
+type:"sports",
+doors: "2", 
+reg: new Date (`2022-12-19`)
+},
+
+{
+  make: "lamborghini", 
+  colour: "orange",
+  type:"sports",
+  doors: "2", 
+  reg: new Date (`2022-12-20`)
+
+},
+
+{
+  make: "BMW", 
+  colour: "blue",
+  type:"convertable",
+  doors: "4", 
+  reg: new Date (`2022-12-25`)
+}
+]
+
+
+
+//New object 
+let pinkDucati =
+{
+  make: "ducati", 
+  colour: "pink",
+  type:"superBike",
+  doors: "1", 
+  reg: new Date (`2022-12-27`)
+}
+
+//New object 
+let truck = 
+{
+  make: "man", 
+  colour: "blue",
+  type:"semiTruck",
+  doors: "2", 
+  reg: new Date (`2022-12-28`)
+}
+
+//New object 
+let carTwo = 
+{
+  make: "volkswagen", 
+  colour: "orange",
+  type:"saloon",
+  doors: "4", 
+  reg: new Date (`2022-12-30`)
+}
+
+cars.unshift(pinkDucati); 
+cars.push(truck); 
+cars.splice(1,0,carTwo) //this syntax doesn't make too much sense
+
+
+// finds the car, returns the entire object which includes a car 
+var stuff = cars.find(car=>car.colour=="red"); 
+
+// to find multiple things in an array where they meet a certain criteria, the filter function is used 
+var stuffTwo = cars.filter(car=>car.doors=="4")
+
+
+// This code allows us to filter the array and create a seperate array just by using map so we get a different array filled with filtered values
+let spec = cars.map(car => {
+  if (car.doors <=2){
+    return "small"
+  }
+
+  if (car.doors == 1){
+    return "on seat"
+  }
+
+  if (car.doors <=4){
+    return "large/ medium"
+  }
+})
+
+//console.log(cars); 
+//console.log(stuff); 
+console.log(stuffTwo); 
+console.log(spec)
+
